@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    width: 1098px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    width: 466px;
+    height: 34px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+}
+
+header nav ul li a{
+    width: 144px;
+    height: 34px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+header nav .logo {
+    height: 58px;
+}
+header nav img {
+    width: 58px;
+}
