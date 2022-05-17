@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+/* ----- HEADER SECTION ----- */
+
 header {
     width: 100%;
     margin: 32px 0;
@@ -43,8 +45,34 @@ header nav ul li a{
 }
 
 header nav .logo {
+    width: 58px;
     height: 58px;
 }
+
 header nav img {
-    width: 58px;
+    width: 100%;
+}
+
+
+/* ----- MAIN SECTION ----- */
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .presentation-card{
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 610px;
+}
+
+main .presentation-card .frame,
+main .presentation-card .symbol,
+main .presentation-card .name{
+    grid-area: 1 / 1 / span 1 / span 1;
+    justify-self: center;
+    align-self: center;
 }
