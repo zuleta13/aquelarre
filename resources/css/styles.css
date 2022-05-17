@@ -58,21 +58,81 @@ header nav img {
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+/* PRESENTATION CARD */
 main .presentation-card{
     width: 1000px;
     margin: auto;
+    margin-bottom: 55px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 610px;
+    grid-template-areas: "card";
 }
 
 main .presentation-card .frame,
 main .presentation-card .symbol,
 main .presentation-card .name{
-    grid-area: 1 / 1 / span 1 / span 1;
+    grid-area: card;
     justify-self: center;
     align-self: center;
+}
+
+/* INFORMATION SECTION */
+section.services {
+    width: 100%;
+    height: 754px;
+    background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.34) 60%, white), url(../media/images/nudo.png);
+    background-repeat: repeat;
+    background-position: 50% 0;
+}
+
+.services h2 {
+    margin: 0 auto;
+    margin-top: 89px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.services .container {
+    width: 1000px;
+    height: 652px;
+    margin: 0 auto;
+    background-color: rgba(77, 74, 74, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service {
+    width: 832px;
+    height: 198px;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .description,
+.service .image {
+    width: 382px;
+    height: 198px;
+    background-color: rgba(196, 196, 196, 0.8);
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.service .image img{
+    width: 100%;
+    position: relative;
+}
+
+.classes img {
+    top: -150px;
+}
+
+.news img {
+    top: -50px;
 }
