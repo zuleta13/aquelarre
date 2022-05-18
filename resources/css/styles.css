@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+/* ----- GLOBAL STYLES ----- */
+section h2 {
+    margin: 0 auto;
+    margin-top: 89px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
 /* ----- HEADER SECTION ----- */
 
 header {
@@ -84,18 +92,18 @@ main .presentation-card .name{
 /* INFORMATION SECTION */
 section.services {
     width: 100%;
-    height: 754px;
+    height: 1000px;
     background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.34) 60%, white), url(../media/images/nudo.png);
     background-repeat: repeat;
     background-position: 50% 0;
 }
 
-.services h2 {
+/* .services h2 {
     margin: 0 auto;
     margin-top: 89px;
     margin-bottom: 13px;
     text-align: center;
-}
+} */
 
 .services .container {
     width: 1000px;
@@ -135,4 +143,50 @@ section.services {
 
 .news img {
     top: -50px;
+}
+
+
+/* ----- STAFF SECTION ----- */
+section.staff {
+    width: 1000px;
+    height: 382px;
+    margin: 0 auto;
+    background-color: rgb(108, 110, 110);
+}
+
+
+.staff .container {
+    width: 906px;
+    height: 236px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.staff .staff-member {
+    width: 236px;
+    height: 236px;
+    overflow: hidden;
+    display: grid;
+    grid-template: 100% / 100%;
+    grid-template-areas: "staff-member";
+}
+
+.staff .description {
+    color: white;
+    text-align: center;
+    z-index: 5;
+    grid-area: staff-member;
+}
+
+.staff img {
+    width: 100%;
+    grid-area: staff-member;
+}
+
+.leader img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -50px;
 }
