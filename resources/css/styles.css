@@ -12,7 +12,7 @@ section h2 {
 
 /* ----- HEADER SECTION ----- */
 
-header {
+header.page-header {
     width: 100%;
     margin: 32px 0;
     display: flex;
@@ -189,4 +189,53 @@ section.staff {
     height: 100%;
     position: relative;
     left: -50px;
+}
+
+/* ----- SUBSCRIBE SECTION ----- */
+
+section.subscribe {
+    width: 1000px;
+    height: 382px;
+    margin: 0 auto;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../media/images/nudo.png);
+    background-position: 50% 0;
+    background-repeat: repeat;
+}
+
+.subscribe p {
+    text-align: center;
+}
+
+.subscribe form {
+    width: 445px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50%% 50%;
+    grid-template-rows: 42px 42px;
+    grid-template-areas: "label input" "submit submit";
+    grid-gap: 10px 10px;
+}
+
+.subscribe form label {
+    grid-area: label;
+    justify-self: right;
+    align-items: center;
+    text-align: right;
+    width: 71px;
+    height: 38px;
+}
+
+.subscribe form input {
+    grid-area: input;
+    justify-self: center;
+    width: 349px;
+    height: 38px;
+    border-radius: 25px;
+}
+
+.subscribe form #submit {
+    grid-area: submit;
+    width: 147px;
+    height: 41px;
+    border-radius: 11px;
 }
