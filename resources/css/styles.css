@@ -210,7 +210,7 @@ section.subscribe {
     width: 445px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 50%% 50%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 42px 42px;
     grid-template-areas: "label input" "submit submit";
     grid-gap: 10px 10px;
@@ -218,9 +218,9 @@ section.subscribe {
 
 .subscribe form label {
     grid-area: label;
-    justify-self: right;
+    /* justify-self: right; */
     align-items: center;
-    text-align: right;
+    /* text-align: right; */
     width: 71px;
     height: 38px;
 }
